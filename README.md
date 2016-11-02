@@ -17,7 +17,7 @@ Install as multisite? (y/N): | n
 Install as subdomain or subdirectory? : | subdomain
 Git repo to clone as wp-content (leave blank to skip): | *hit [Enter]*
 Local SQL file to import for database (leave blank to skip): | *This directory must be an absolute path, so the easiest thing to do on a Mac is to drag your mysql file into your terminal window here: the absolute filepath with fill itself in.*
-Remove default themes and plugins? (y/N): | N
+Remove default themes and plugins? (y/N): | y
 Add sample content to site (y/N): | N
 Enable WP_DEBUG and WP_DEBUG_LOG (y/N): | N
 
