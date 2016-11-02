@@ -1,0 +1,33 @@
+@import "../../../../largo-dev/less/inc/variables.less";
+@import "../../../../largo-dev/less/inc/mixins.less";
+
+#homepage-featured {
+  margin-bottom: @baseline;
+  border: 1px solid @grayLighter;
+  border-bottom: 5px solid @grayLighter;
+  .top-story {
+    padding: 10px 10px @baseline;
+    img {
+      margin-bottom: @baseline / 2 ;
+    }
+    h2 {
+      font-size: @baseFontSize * 2;
+      margin-bottom: @baseline / 2;
+      line-height: 1.1;
+    }
+    p {
+      font-size: @baseFontSize * 0.815;
+      margin-bottom: @baseline / 2;
+    }
+    h4 {
+      font-size: @baseFontSize - 2;
+      margin-bottom: 0;
+    }
+    @media (max-width: 768px) {
+      clear: both;
+      width: 100%;
+      padding: 10px;
+      margin: 0;  
+    }
+  }
+}

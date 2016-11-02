@@ -1,0 +1,122 @@
+/**
+ * @group Color
+ * @label Base Color (used for navbar, widget titles, etc.)
+ * @type color
+ * @default_value #2275bb
+ */
+/**
+ * @group Color
+ * @label Header/Footer Color
+ * @type color
+ * @default_value #222
+ */
+/**
+ * @group Color
+ * @label Pre-Footer Color
+ * @type color
+ * @default_value #ddd
+ */
+/**
+ * @group Color
+ * @label Color of links
+ * @type color
+ * @default_value #2275bb
+ */
+/**
+ * @group Color
+ * @label Hover color of links
+ * @type color
+ * @default_value #2275bb
+ */
+/**
+ * @group Color
+ * @label Background color of post meta boxes (author bio, related posts, etc.)
+ * @type color
+ * @default_value #fff
+ */
+/**
+ * @group Basics
+ * @label Body Background Color
+ * @type color
+ * @default_value #fff
+ */
+/**
+ * @group Basics
+ * @label Page Background Color
+ * @type color
+ * @default_value #fff
+ */
+/**
+ * @group Basics
+ * @label Text Color
+ * @type color
+ * @default_value #333
+ */
+/**
+ * @group Basics
+ * @label Default Vertical Spacing
+ * @type pixels
+ * @default_value 24px
+ */
+/**
+ * @group Typography
+ * @label Sans Font Family
+ * @type text
+ * @default_value "Helvetica Neue", Helvetica, Arial, sans-serif
+ */
+/**
+ * @group Typography
+ * @label Serif Font Family
+ * @type text
+ */
+/**
+ * @group Typography
+ * @label Base Font Size
+ * @type pixels
+ */
+/**
+ * @group Typography
+ * @label Sans Font Family
+ * @type dropdown
+ * @options @serifFontFamily|@sansFontFamily
+ * @default_value @serifFontFamily
+ */
+/**
+ * @group Typography
+ * @label Base Line Height
+ * @type text
+ * @default_value 1.5
+ */
+#homepage-featured {
+  margin-bottom: 24px;
+  border: 1px solid #dddddd;
+  border-bottom: 5px solid #dddddd;
+}
+#homepage-featured .top-story {
+  padding: 10px 10px 24px;
+}
+#homepage-featured .top-story img {
+  margin-bottom: 12px;
+}
+#homepage-featured .top-story h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+#homepage-featured .top-story p {
+  font-size: 13.04px;
+  margin-bottom: 12px;
+}
+#homepage-featured .top-story h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  #homepage-featured .top-story {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWVwYWdlcy9hc3NldHMvbGVzcy9va2xhaG9tYS5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0E7RUFDRSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsZ0NBQUE7O0FBSEYsa0JBSUU7RUFDRSx1QkFBQTs7QUFMSixrQkFJRSxXQUVFO0VBQ0UsbUJBQUE7O0FBUE4sa0JBSUUsV0FLRTtFQUNFLGVBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBOztBQVpOLGtCQUlFLFdBVUU7RUFDRSxrQkFBQTtFQUNBLG1CQUFBOztBQWhCTixrQkFJRSxXQWNFO0VBQ0UsZUFBQTtFQUNBLGdCQUFBOztBQVFKLFFBTjRCO0VBTTVCLGtCQXhCQTtJQW1CSSxXQUFBO0lBQ0EsV0FBQTtJQUNBLGFBQUE7SUFDQSxTQUFBIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcIi4uLy4uLy4uLy4uL2xhcmdvLWRldi9sZXNzL2luYy92YXJpYWJsZXMubGVzc1wiO1xuQGltcG9ydCBcIi4uLy4uLy4uLy4uL2xhcmdvLWRldi9sZXNzL2luYy9taXhpbnMubGVzc1wiO1xuXG4jaG9tZXBhZ2UtZmVhdHVyZWQge1xuICBtYXJnaW4tYm90dG9tOiBAYmFzZWxpbmU7XG4gIGJvcmRlcjogMXB4IHNvbGlkIEBncmF5TGlnaHRlcjtcbiAgYm9yZGVyLWJvdHRvbTogNXB4IHNvbGlkIEBncmF5TGlnaHRlcjtcbiAgLnRvcC1zdG9yeSB7XG4gICAgcGFkZGluZzogMTBweCAxMHB4IEBiYXNlbGluZTtcbiAgICBpbWcge1xuICAgICAgbWFyZ2luLWJvdHRvbTogQGJhc2VsaW5lIC8gMiA7XG4gICAgfVxuICAgIGgyIHtcbiAgICAgIGZvbnQtc2l6ZTogQGJhc2VGb250U2l6ZSAqIDI7XG4gICAgICBtYXJnaW4tYm90dG9tOiBAYmFzZWxpbmUgLyAyO1xuICAgICAgbGluZS1oZWlnaHQ6IDEuMTtcbiAgICB9XG4gICAgcCB7XG4gICAgICBmb250LXNpemU6IEBiYXNlRm9udFNpemUgKiAwLjgxNTtcbiAgICAgIG1hcmdpbi1ib3R0b206IEBiYXNlbGluZSAvIDI7XG4gICAgfVxuICAgIGg0IHtcbiAgICAgIGZvbnQtc2l6ZTogQGJhc2VGb250U2l6ZSAtIDI7XG4gICAgICBtYXJnaW4tYm90dG9tOiAwO1xuICAgIH1cbiAgICBAbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgIGNsZWFyOiBib3RoO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICBwYWRkaW5nOiAxMHB4O1xuICAgICAgbWFyZ2luOiAwOyAgXG4gICAgfVxuICB9XG59Il19 */
