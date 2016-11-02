@@ -3,13 +3,6 @@ from tools.fablib import *
 from fabric.api import task
 
 """
-Getting set up for the first time and using vim?
-Run:
-    :%s/okwatch/project_name/g       # name for the project, used as the database name. This should match the umbrella repository name and the domain.wpengine.com name
-    :%s/OKWATCH/YOUR_SITE_ENV_VAR/g      # environment variable slug from INN's secrets repository
-"""
-
-"""
 Base configuration
 """
 env.project_name = 'okwatch'
