@@ -1,8 +1,22 @@
 <?php
 /**
+ * Define some constants
+ */
+ 
+// This site is an INN Member
+if ( !defined( 'INN_MEMBER' ) {
+    define( 'INN_MEMBER', true) ;
+}
+
+// This site is hosted by INN
+if ( !defined( 'INN_HOSTED' ) {
+    define( 'INN_HOSTED', true) ;
+}
+
+/**
  * Include theme files
  *
- * Based off of how Largo loads files: https://github.com/INN/Largo/blob/master/functions.php#L358
+ * Based on how Largo loads files: https://github.com/INN/Largo/blob/master/functions.php#L358
  *
  * 1. hook function Largo() on after_setup_theme
  * 2. function Largo() runs Largo::get_instance()
