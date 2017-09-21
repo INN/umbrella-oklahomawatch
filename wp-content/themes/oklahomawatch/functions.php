@@ -79,4 +79,4 @@ function oklahoma_configure_dfp() {
 
 }
 
-add_action('dfw_setup', 'oklahoma_configure_dfp');
+#add_action('dfw_setup', 'oklahoma_configure_dfp');
