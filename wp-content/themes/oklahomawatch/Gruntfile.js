@@ -3,11 +3,11 @@ module.exports = function(grunt) {
 
     // Force use of Unix newlines
     grunt.util.linefeed = '\n';
-    
+
     // Find what the current theme's directory is, relative to the WordPress root
     var path = process.cwd();
     path = path.replace(/^[\s\S]+\/wp-content/, "\/wp-content");
-    
+
     var CSS_LESS_FILES = {
         'css/child.css': 'less/child.less',
         'homepages/assets/css/oklahoma.css': 'homepages/assets/less/oklahoma.less',
@@ -38,10 +38,6 @@ module.exports = function(grunt) {
                     'less:development',
                     'cssmin'
                 ]
-            },
-            sphinx: {
-                files: ['docs/*.rst', 'docs/*/*.rst'],
-                tasks: ['docs']
             }
         },
         
@@ -64,40 +60,6 @@ module.exports = function(grunt) {
                     dest: 'homepages/assets/css',
                     ext: '.min.css'
                 }]
-            }
-        },
-
-		pot: {
-            options: {
-                text_domain: 'largo',
-                dest: 'lang/',
-                keywords: [ //WordPress localization functions
-                    '__:1',
-                    '_e:1',
-                    '_x:1,2c',
-                    'esc_html__:1',
-                    'esc_html_e:1',
-                    'esc_html_x:1,2c',
-                    'esc_attr__:1',
-                    'esc_attr_e:1',
-                    'esc_attr_x:1,2c',
-                    '_ex:1,2c',
-                    '_n:1,2',
-                    '_nx:1,2,4c',
-                    '_n_noop:1,2',
-                    '_nx_noop:1,2,3c'
-                ]
-            },
-            files: {
-                src: '**/*.php',
-                expand: true
-            }
-        },
-
-        po2mo: {
-            files: {
-                src: 'lang/*.po',
-                expand: true
             }
         }
     });

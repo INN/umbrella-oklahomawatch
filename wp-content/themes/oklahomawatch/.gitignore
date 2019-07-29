@@ -14,6 +14,7 @@ lang/*.merged
 ## Misc
 .idea/
 node_modules
+package-lock.json
 
 #######################
 #  sphinx .gitignore  #
