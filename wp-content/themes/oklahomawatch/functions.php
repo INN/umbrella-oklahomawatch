@@ -29,6 +29,7 @@ if ( ! defined( 'INN_HOSTED' ) ) {
 function largo_child_require_files() {
 	$includes = array(
 		'/inc/tablepress.php',
+		'/inc/load-more-posts.php',
 	);
 
 	foreach ($includes as $include ) {
