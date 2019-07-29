@@ -48,9 +48,9 @@ $featured = false;
 	 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => __( 'Permalink to', 'largo' ) . ' ' ) )?>" rel="bookmark"><?php the_title(); ?></a>
 	 	</h2>
 
-	 	<h5 class="byline"><?php largo_byline(); ?></h5>
+	 	<h5 class="byline"><?php largo_byline( true, false, get_the_ID() ); ?></h5>
 
-		<?php largo_excerpt( $post, 5, true, __('Continue&nbsp;Reading', 'largo'), true, false ); ?>
+		<?php largo_excerpt( $post, 5, null, null, true, false ); ?>
 
 		<?php if ( !is_home() && largo_has_categories_or_tags() && $tags === 'btm' ) { ?>
 	    	<h5 class="tag-list"><strong><?php _e('More about:', 'largo'); ?></strong> <?php largo_categories_and_tags( 8 ); ?></h5>
