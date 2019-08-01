@@ -28,7 +28,8 @@ if ( ! defined( 'INN_HOSTED' ) ) {
  */
 function largo_child_require_files() {
 	$includes = array(
-		'/inc/tablepress.php'
+		'/inc/tablepress.php',
+		'/inc/load-more-posts.php',
 	);
 
 	foreach ($includes as $include ) {
@@ -57,7 +58,12 @@ function child_stylesheet() {
 	wp_dequeue_style( 'largo-child-styles' );
 
 	$suffix = ( LARGO_DEBUG )? '' : '.min';
-	wp_enqueue_style( 'oklahomawatch', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
+	wp_enqueue_style(
+		'oklahomawatch',
+		get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css',
+		array(),
+		filemtime( get_stylesheet_directory() . '/css/child' . $suffix . '.css' )
+	);
 
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
@@ -78,5 +84,6 @@ function oklahoma_configure_dfp() {
     $DoubleClick->register_breakpoint('desktop', array('minWidth'=>980,'maxWidth'=>9999));
 
 }
-
+# unsure why this has been commented - @benlk, 2019-07-29
+# done in https://github.com/INN/umbrella-okwatch/commit/9e688f9a85290b81c48e3aea6f8031b039c01864
 #add_action('dfw_setup', 'oklahoma_configure_dfp');

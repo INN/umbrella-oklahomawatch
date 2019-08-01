@@ -9,13 +9,7 @@ $args = array(
 	'posts_per_page' => 10,
 	'post__not_in' => $shown_ids,
 	'ignore_sticky_posts' => true,
-	'tax_query' => array(
-		array(
-			'taxonomy' 	=> 'prominence',
-			'field' 	=> 'slug',
-			'terms' 	=> 'homepage-featured'
-		)
-	)
+	'tax_query' => okwatch_homepage_tax_query()
 );
 
 //if (of_get_option('num_posts_home'))
